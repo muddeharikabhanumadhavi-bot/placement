@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clickable Divs</title>
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+            background-color:deepskyblue;
+        }
+
+        h1 {
+            text-align: center;
+            color: red;
+        }
+
+        .search-box-wrapper {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .search-box form {
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-box input[type="text"] {
+            padding: 10px;
+            width: 250px;
+            font-size: 16px;
+        }
+
+        .search-box input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .clickable-div {
+            width: 200px;
+            height: 150px;
+            background-color:white;
+            color: darkblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+
+        .clickable-div:hover {
+            background-color:palevioletred;
+        }
+    </style>
+</head>
+<body>
+
+<h1>PLACEMENTS</h1>
+
+<!-- Centered Search Bar -->
+<div class="search-box-wrapper">
+    <div class="search-box">
+        <form action="" onsubmit="return redirectToPage(this.search.value);">
+            <input type="text" name="search" placeholder="Enter company name..." required>
+            <input type="submit" value="Go">
+        </form>
+    </div>
+</div>
+
+<!-- Clickable Divs -->
+<div class="container">
+    <div class="clickable-div" onclick="location.href='https://www.accenture.com/in-en'">Accenture</div>
+    <div class="clickable-div" onclick="location.href='https://rtcamp.com/'">RT Camp</div>
+    <div class="clickable-div" onclick="location.href='https://www.goldmansachs.com/worldwide/india'">Gold Man Saches</div>
+    <div class="clickable-div" onclick="location.href='https://mckinleyrice.com/'">Mckinley Rice</div>
+    <div class="clickable-div" onclick="location.href='https://cimpress.com/'">CIMPRESS</div>
+    <div class="clickable-div" onclick="location.href='https://www.tcs.com/home-page'">TCS</div>
+    <div class="clickable-div" onclick="location.href='https://www.rtechgroup.co.in/'">RTECH</div>
+    <div class="clickable-div" onclick="location.href='https://rotomaker.com/'">ROTOMAKER</div>
+    <div class="clickable-div" onclick="location.href='https://www.ltimindtree.com/'">LTMIND TREE</div>
+    <div class="clickable-div" onclick="location.href='https://www.vcreatefxworld.com/services'">VcreateFX</div>
+    <div class="clickable-div" onclick="location.href='https://www.episource.com/'">EPISOURCE</div>
+    <div class="clickable-div" onclick="location.href='https://milekal.com/'">MILEKAL</div>
+    <div class="clickable-div" onclick="location.href='https://www.hetero.com/'">HETERO</div>
+    <div class="clickable-div" onclick="location.href='https://www.freshfields.com/en'">FRESH FEILDS</div>
+    <div class="clickable-div" onclick="location.href='https://ramcocements.in/'">RAMCO CEMENTS</div>
+    <div class="clickable-div" onclick="location.href='https://www.wns.com/'">WNS GLOBAL SERVICES</div>
+    <div class="clickable-div" onclick="location.href='https://www.fifthdimensiontech.com/'">5th Dimension Technologies</div>
+    <div class="clickable-div" onclick="location.href='https://www.drreddys.com/'">Dr Reddy's Laboratories</div>
+    <div class="clickable-div" onclick="location.href='https://www.247.ai/'">24/7 AI</div>
+    <div class="clickable-div" onclick="location.href='https://www.techolution.com/'">TECHOLUTION</div>
+    <div class="clickable-div" onclick="location.href='https://www.genpact.com/services'">Genpact BPO</div>
+    <div class="clickable-div" onclick="location.href='https://nextelmeta.com/about.html'">NEXTEL META</div>
+    <div class="clickable-div" onclick="location.href='https://www.jadeglobal.com/'">JADE GLOBAL</div>
+    <div class="clickable-div" onclick="location.href='https://www.rakceramics.com/uk/en/'">RAK CERAMICS</div>
+    <div class="clickable-div" onclick="location.href='https://in.adp.com/'">ADP</div>
+    <div class="clickable-div" onclick="location.href='https://www.lwyd.in/'">LWYD</div>
+    <div class="clickable-div" onclick="location.href='https://hyperion-tech.co/'">HYPERION TECH</div>
+    <div class="clickable-div" onclick="location.href='https://bscpl.net/'">BSCPL</div>
+    <div class="clickable-div" onclick="location.href='https://fractal.ai/'">FRACTAL</div>
+    <div class="clickable-div" onclick="location.href='www.infosys.com'">INFOSYS IT</div>
+    <div class="clickable-div" onclick="location.href='https://www.theceyone.com'">CEYONE</div>
+    <div class="clickable-div" onclick="location.href='https://www.firstsource.com/about'">FRISTSOURCE</div>
+    <div class="clickable-div" onclick="location.href='https://www.ceipal.com'">RECRUITE CRM</div>
+    <div class="clickable-div" onclick="location.href='https://www.infinite.com/'">INFINITE COMPUTER SOULTIONS</div>
+    <div class="clickable-div" onclick="location.href='https://in.jobrapido.com/'">DELOITTE</div>
+    <div class="clickable-div" onclick="location.href='https://www.deloitte.com/'">DELOITEE RADC</div>
+    <div class="clickable-div" onclick="location.href='https://www.ilm.com/about'">ILM</div>
+    <div class="clickable-div" onclick="location.href='https://www.larsentoubro.com/'">LARSEN & TOUBRO</div>
+    <div class="clickable-div" onclick="location.href='https://www.movate.com/'">MOVATE</div>
+    <div class="clickable-div" onclick="location.href='https://sandhyaaqua.com/'">SANDHYA AQUA</div>
+    <div class="clickable-div" onclick="location.href='https://www.biologicale.com/'">BIOLOGICAL E LIMITED</div>
+    <div class="clickable-div" onclick="location.href='https://www.hpe.com/in/en/home.html'">HPE</div>
+    <div class="clickable-div" onclick="location.href='https://vikruthi.com/'">VIDRUTHI COMPANY</div>
+    <div class="clickable-div" onclick="location.href='https://www.livingpixels.in/'">LIVING PIXELS</div>
+    <div class="clickable-div" onclick="location.href='https://www.falconebiz.com/'">SWAGHOLIC</div>
+    <div class="clickable-div" onclick="location.href='https://www.cognizant.com/in/en'">COGNIZANT</div>
+    <div class="clickable-div" onclick="location.href='https://careers.wipro.com/wilp'">WIPRO WILP</div>
+    <div class="clickable-div" onclick="location.href='https://www.acmegrade.com/'">ACMEGRADE</div>
+    <div class="clickable-div" onclick="location.href='https://ecoholics.in/'">EDUHOLIC</div>
+    <div class="clickable-div" onclick="location.href='https://internshala.com/'">GRANTELY</div>
+    <div class="clickable-div" onclick="location.href='https://intellipaat.com/about-us/'">INTELLIPAAT</div>
+    <div class="clickable-div" onclick="location.href='https://zolostays.com/contact-us'">ZOLOSTAYS</div>
+    <div class="clickable-div" onclick="location.href='https://mycaptain.in/'">MYCAPATION</div>
+    <div class="clickable-div" onclick="location.href='https://www.virtusa.com/'">VIRTUSA</div>
+    <div class="clickable-div" onclick="location.href='https://www.divislabs.com/'">DIVIS LABS</div>
+    <div class="clickable-div" onclick="location.href='https://www.coastalareabank.com/'">COASTAL BANK</div>
+    <div class="clickable-div" onclick="location.href='https://www.globallogic.com/about/locations/india/'">GLOBAL LOGIC</div>
+    <div class="clickable-div" onclick="location.href='https://www.watertecindia.com/'">WATERTEC</div>
+    <div class="clickable-div" onclick="location.href='https://www.talenttrekelearning.com/'">TALENT TREK E-LEARNING</div>
+    <div class="clickable-div" onclick="location.href='https://mindx360.com/'">MINDX 360</div>
+    <div class="clickable-div" onclick="location.href='https://www.lauruslabs.com/'">LAURUS LABS</div>
+    <div class="clickable-div" onclick="location.href='https://www.miraclesoft.com/company/'">MIRACLE</div>
+    <div class="clickable-div" onclick="location.href='https://www.radicustech.com/'">RADIUS DRUGS</div>
+    <div class="clickable-div" onclick="location.href='https://www.honeywell.com/in/en'">HONEY WELL</div>
+    <div class="clickable-div" onclick="location.href='https://www.concentrix.com/'">CONCENTRIX</div>
+    <div class="clickable-div" onclick="location.href='https://innovacx.com/'">INNOVACX TECH</div>
+    <div class="clickable-div" onclick="location.href='https://www.amararaja.com/'">AMARA RAJA</div>
+    <div class="clickable-div" onclick="location.href='https://ulearnpro.com/'">ULEARN</div>
+    <div class="clickable-div" onclick="location.href='https://corrohealth.com/'">CORRO HEALTH</div>
+    <div class="clickable-div" onclick="location.href='https://www.deshawindia.com/'">DE SHAW</div>
+    <div class="clickable-div" onclick="location.href='https://ttec.com/'">TTEC</div>
+    <div class="clickable-div" onclick="location.href='https://www.cornerstoneondemand.com/'">CORNERSTONE</div>
+    <div class="clickable-div" onclick="location.href='https://lastminutegroup.com/'">LASTMINUTE</div>
+    <div class="clickable-div" onclick="location.href='https://www.itnova.com/'">IT NOVA</div>
+    <div class="clickable-div" onclick="location.href='https://eduversity.in/'">EDU-VERSITY</div>
+    <div class="clickable-div" onclick="location.href='https://www.technook.in/'">TEACHNOOK</div>
+    <div class="clickable-div" onclick="location.href='https://www.bhanzu.com/'">BHANZU</div>
+    <div class="clickable-div" onclick="location.href='https://www.sonata-software.com/'">SONATA</div>
+    <div class="clickable-div" onclick="location.href='http://www.corizo.in/'">CORIZO</div>
+    <div class="clickable-div" onclick="location.href='https://mosol9.com/'">Mosol9</div>
+    <div class="clickable-div" onclick="location.href='https://adhocdevelopers.in/'">ADHOC</div>
+    <div class="clickable-div" onclick="location.href='https://tpdigitaltechnologies.com/'">TP DIGITAL</div>
+    <div class="clickable-div" onclick="location.href='https://www.nice.com/'">NICE</div>
+    <div class="clickable-div" onclick="location.href='https://www.policybazaar.com/'">Policybazaar</div>
+    <div class="clickable-div" onclick="location.href='https://www.kotaklife.com/'">KotakLife</div>
+    <div class="clickable-div" onclick="location.href='https://www.techmahindra.com/'">Tech Mahindra</div>
+    <div class="clickable-div" onclick="location.href='https://www.hcltech.com/'">HCL</div>
+    <div class="clickable-div" onclick="location.href='https://www.unisys.com/'">UNISYS</div>
+    <div class="clickable-div" onclick="location.href='https://www.pwc.in/'">PWC</div>
+    <div class="clickable-div" onclick="location.href='https://www.ncc.cm/'">NCC</div>
+    <div class="clickable-div" onclick="location.href='https://www.tatapower.com/'">Tata power</div>
+    <div class="clickable-div" onclick="location.href='https://www.mrftyres.com/'">MRF</div>
+    <div class="clickable-div" onclick="location.href='https://www.deccanfinechemicals.com/'">Deccan Fine Chemicals</div>
+    <div class="clickable-div" onclick="location.href='https://www.weskill.in/'">WESKILL</div>
+    <div class="clickable-div" onclick="location.href='https://www.godrej.com/'">Godrej</div>
+    <div class="clickable-div" onclick="location.href='https://www.acg-world.com/'">ACG</div>
+    <div class="clickable-div" onclick="location.href='https://www.wellsfargo.com/'">Wellsfargo</div>
+</div>
+
+<!-- JavaScript Redirect Handler (Case-Insensitive) -->
+<script>
+    function redirectToPage(value) {
+        const input = value.toLowerCase().trim();
+
+        switch (input) {
+            case "accenture":
+                location.href = "https://www.accenture.com/in-en";
+                break;
+            case "rt camp":
+                location.href = "https://rtcamp.com/";
+                break;
+            case "gold man saches":
+                location.href = "https://www.goldmansachs.com/worldwide/india";
+                break;
+            case "mckinley rice":
+                location.href = "https://mckinleyrice.com/";
+                break;
+            case "cimpress":
+                location.href = "https://cimpress.com/";
+                break;
+            case "tcs":
+                location.href = "https://www.tcs.com/home-page";
+                break;
+            case "rtech":
+                location.href = "https://www.rtechgroup.co.in/";
+                break;
+            case "rotomaker":
+                location.href = "https://rotomaker.com/";
+                break;
+            case "ltmind tree":
+                location.href = "https://www.ltimindtree.com/";
+                break;
+            case "vcreatefx":
+                location.href = "https://www.vcreatefxworld.com/services";
+                break;
+            case "episource":
+                location.href = "https://www.episource.com/";
+                break;
+            case "milekal":
+                location.href = "https://milekal.com/";
+                break;
+            case "hetero":
+                location.href = "https://www.hetero.com/";
+                break;
+            case "fresh feilds":
+                location.href = "https://www.freshfields.com/en";
+                break;
+            case "ramco cements":
+                location.href = "https://ramcocements.in/";
+                break;
+            case "wns global services":
+                location.href = "https://www.wns.com/";
+                break;
+            case "5th dimension technologies":
+                location.href = "https://www.fifthdimensiontech.com/";
+                break;
+            case "dr reddy's laboratories":
+                location.href = "https://www.drreddys.com/";
+                break;
+            case "24/7 ai":
+                location.href = "https://www.247.ai/";
+                break;
+            case "techolution":
+                location.href = "https://www.techolution.com/";
+                break;
+            case "genpact bpo":
+                location.href = "https://www.genpact.com/services";
+                break;
+            case "nextel meta":
+                location.href = "https://nextelmeta.com/about.html";
+                break;
+            case "jade global":
+                location.href = "https://www.jadeglobal.com/";
+                break;
+            case "rak ceramics":
+                location.href = "https://www.rakceramics.com/uk/en/";
+                break;
+            case "adp":
+                location.href = "https://in.adp.com/";
+                break;
+            case "lwyd":
+                location.href = "https://www.lwyd.in/";
+                break;
+            case "hyperion tech":
+                location.href = "https://hyperion-tech.co/";
+                break;
+            case "bscpl":
+                location.href = "https://bscpl.net/";
+                break;
+            case "fractal":
+                location.href = "https://fractal.ai/";
+                break;
+            case "infosys it":
+                location.href = "www.infosys.com";
+                break;
+            case "ceyone campus":
+                location.href = "https://www.theceyone.com";
+                break;
+            case "first source":
+                location.href = "https://www.firstsource.com/about";
+                break;
+            case "recruite crm":
+                location.href = "https://www.ceipal.com";
+                break;
+            case "infinity computer solutions":
+                location.href = "https://www.infinite.com/";
+                break;
+            case "deloitte":
+                location.href = "https://in.jobrapido.com/";
+                break;
+            case "deloitte radc":
+                location.href = "https://www.deloitte.com/";
+                break;
+            case "ilm":
+                location.href = "https://www.ilm.com/about";
+                break;
+            case "fractal":
+                location.href = "https://fractal.ai/";
+                break;
+            case "infosys it":
+                location.href = "www.infosys.com";
+                break;
+            case "ceyone campus":
+                location.href = "https://www.theceyone.com";
+                break;
+            case "first source":
+                location.href = "https://www.firstsource.com/about";
+                break;
+            case "recruite crm":
+                location.href = "https://www.ceipal.com";
+                break;
+            case "infinity computer solutions":
+                location.href = "https://www.infinite.com/";
+                break;
+            case "deloitte":
+                location.href = "https://in.jobrapido.com/";
+                break;
+            case "deloitte radc":
+                location.href = "https://www.deloitte.com/";
+                break;
+            case "ilm":
+                location.href = "https://www.ilm.com/about";
+                break;
+            case "lerson &taubro":
+                location.href = "https://www.larsentoubro.com/";
+                break;
+            case "movate":
+                location.href = "https://www.movate.com/";
+                break;
+            case "sandhya aqua":
+                location.href ="https://sandhyaaqua.com/";
+                break;
+            case "biological e limited":
+                location.href = "https://www.biologicale.com/";
+                break;
+            case "hpe":
+                location.href = "https://www.hpe.com/in/en/home.html";
+                break;
+            case "vidruthi company":
+                location.href = "https://vikruthi.com/";
+                break;
+            case "living pixels":
+                location.href = "https://www.livingpixels.in/";
+                break;
+            case "swagholic":
+                location.href = "https://www.falconebiz.com/";
+                break;
+            case "cognizant":
+                location.href = "https://www.cognizant.com/in/en";
+                break;
+            case "wipro wilp":
+                location.href = "https://careers.wipro.com/wilp";
+                break;
+            case "acmegrade":
+                location.href = "https://www.acmegrade.com/";
+                break;
+            case "eduholic":
+                location.href = "https://ecoholics.in";
+                break;
+            case "grantly":
+                location.href = "https://internshala.com/";
+                break;
+            case "intellipaat":
+                location.href = "'https://intellipaat.com/about-us/";
+                break;
+            case "zolostays":
+                location.href = "https://zolostays.com/contact-us";
+                break;
+            case "mycapatain":
+                location.href = "https://mycaptain.in/";
+                break;
+            case "virtusa":
+                location.href = "https://www.virtusa.com/";
+                break;
+            case "divis labs":
+                location.href = "https://www.divislabs.com/";
+                break;
+            case "coastal bank":
+                location.href = "https://www.coastalareabank.com/";
+                break;
+            case "global logic":
+                location.href = "https://www.globallogic.com/about/locations/india/";
+                break;
+            case "watertec":
+                location.href = "https://www.watertecindia.com/";
+                break;
+            case "talenttrek e learning":
+                location.href = "https://www.talenttrekelearning.com/";
+                break;
+            case "mindx 360":
+                location.href = "https://mindx360.com/";
+                break;
+            case "laurus labs":
+                location.href = "https://www.lauruslabs.com/";
+                break;
+            case "miracle":
+                location.href = "https://www.miraclesoft.com/company/";
+                break;
+            case "radius drug":
+                location.href = "https://www.radicustech.com/";
+                break;
+            case "honeywell":
+                location.href = "https://www.honeywell.com/in/en";
+                break;
+            case "concentrix":
+                location.href = "https://www.concentrix.com/";
+                break;
+            case "innovacx tech":
+                location.href = "https://innovacx.com";
+                break;
+            case "amara raja":
+                location.href = "https://www.amararaja.com";
+                break;
+            case "ulearn":
+                location.href = "https://www.ulearn.education/";
+                break;
+            case "corro health":
+                location.href = "https://corrohealth.com/";
+                break;
+            case "de shaw":
+                location.href = "https://www.deshawindia.com/";
+                break;
+            case "ttec":
+                location.href = "https://www.ttec.com/";
+                break;
+            case "cornerstone":
+                location.href = "https://www.cornerstoneondemand.com/";
+                break;
+            case "lastminute":
+                location.href = "https://www.lastminute.com/";
+                break;
+            case "it nova":
+                location.href = "https://www.itnova.com/";
+                break;
+            case "edu-versity":
+                location.href = "https://eduversity.in/";
+                break;
+            case "teachnook":
+                location.href = "https://www.teachnook.com/";
+                break;
+            case "bhanzu":
+                location.href = "https://www.bhanzu.com/";
+                break;
+            case "sonata":
+                location.href = "https://www.sonata-software.com/";
+                break;
+            case "corizo":
+                location.href = "http://www.corizo.in/";
+                break;
+            case "mosol9":
+                location.href = "https://mosol9.com/";
+                break;
+            case "adhoc":
+                location.href = "https://adhocdevelopers.in/";
+                break;
+            case "tp digital":
+                location.href = "https://tpdigitaltechnologies.com/";
+                break;
+            case "nice":
+                location.href = "https://www.nice.com/";
+                break;
+            case "policybazaar":
+                location.href = "https://www.policybazaar.com/";
+                break;
+            case "kotaklife":
+                location.href = "https://www.kotaklife.com/";
+                break;
+            case "tech mahindra":
+                location.href = "https://www.techmahindra.com/";
+                break;
+            case "hcl":
+                location.href = "https://www.hcltech.com/";
+                break;
+            case "unisys":
+                location.href = "https://www.unisys.com/";
+                break;
+            case "pwc":
+                location.href = "https://www.pwc.in/";
+                break;
+            case "ncc":
+                location.href = "https://www.ncc.cm/";
+                break;
+            case "tata power":
+                location.href = "https://www.tatapower.com/";
+                break;
+            case "mrf":
+                location.href = "https://www.mrftyres.com/";
+                break;
+            case "deccan fine chemicals":
+                location.href = "https://www.deccanfinechemicals.com/";
+                break;
+            case "weskill":
+                location.href = "https://www.weskill.in/";
+                break;
+            case "godrej":
+                location.href = "https://www.godrej.com/";
+                break;
+            case "acg":
+                location.href = "https://www.acg-world.com/";
+                break;
+            case "wellsfargo":
+                location.href = "https://www.wellsfargo.com/";
+                break;
+            default:
+                alert("Company not found. Please check spelling.");
+        }
+        return false;
+    }
+</script>
+</body>
+</html>
